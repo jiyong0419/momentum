@@ -213,6 +213,15 @@
             ➕  <input min-length="15">
 
 🌈           🌞           🌈           🌞           🌈
+
+#4.2
+    1.  app.js 파일 수정
+        ⏩   function handleLoginFormSubmit(e){}
+            ➕  eventListener의 콜백함수는 e 파라미터가 있다.
+            ➕  e.preventDefault()는 브라우저의 기본 수행동작을 막아준다.
+                ➡  해당 코드에선 submit이 발생시 브라우저가 새로고침되는걸 막는다.
+        ⏩   loginForm.addEventListener("submit", handleLoginFormSubmit);
+        
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
@@ -291,6 +300,7 @@
 
 ➡ 여러가지 Evenet들
     ➕  click
+    ➕  submit
     ➕  mousedown
     ➕  mousemove
     ➕  mouseout
