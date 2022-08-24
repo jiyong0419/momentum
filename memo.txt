@@ -223,6 +223,11 @@
         ⏩   loginForm.addEventListener("submit", handleLoginFormSubmit);
         
 🌞           🌈           🌞           🌈           🌞
+
+#4.3
+    1.  addEventListener의 콜백함수의 event 파라미터는 다양한 정보를 갖고있다.
+        ⏩   마우스가 클릭한 곳의 X,Y좌표 등
+
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
