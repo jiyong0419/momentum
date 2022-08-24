@@ -257,6 +257,20 @@
                 ➡  localStorage에 property와 key를 등록한다.
 
 🌈           🌞           🌈           🌞           🌈
+
+#4.6
+    1.  index.html 파일 수정
+        ⏩   <form id="login-form" class="hidden">
+    
+    2.  app.js 파일 수정
+        ⏩   const USERNAME_KEY = "username";
+        ⏩   function helloUser(username) {}
+        ⏩   function handleLoginFormSubmit(e) {}
+        ⏩   if (savedUsername === null) {}
+        ⏩   const savedUsername = localStorage.getItem("username");
+            ➕  localStorage.getItem(String)
+                ➡  localStorage의 property중 String과 일치하는 property의 key를 리턴한다
+
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
@@ -317,6 +331,8 @@
     ➕ event.preventDefault 👉🏻 브라우저의 기본 수행동작을 막음
     ➕ String.length 👉🏻 String의 길이를 Number로 리턴해줌
     ➕ `backtick ${backtick}` 👉🏻 백틱기호 + 백틱기호 내에서 변수 사용 방법
+    ➕ localStorage.getItem(String) 👉🏻 localStorage의 property중에 String과 일치하는 property의 key를 리턴해줌
+    ➕ localStorage.setItem(property,key) 👉🏻 localStorage에 property와 key를 등록해줌
 
 ➡ 자바스크립트로 HTML에 접근
     ➕  document.getElementById("title") 👉🏻 id가 title인 태그를 가져온다.
