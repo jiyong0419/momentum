@@ -229,6 +229,25 @@
         ⏩   마우스가 클릭한 곳의 X,Y좌표 등
 
 🌈           🌞           🌈           🌞           🌈
+
+#4.4
+    1.  index.html 파일 수정
+        ⏩   < id="hello" class="hidden">
+    
+    2.  style.css 파일 수정
+        ⏩   .hidden {}
+    3.  app.js 파일 수정
+        ⏩   const hello = document.querySelector("#hello");
+        ⏩   const HIDDEN_CLASSNAME = "hidden";
+        ⏩   loginForm.classList.add(HIDDEN_CLASSNAME);
+        ⏩   hello.classList.remove(HIDDEN_CLASSNAME);
+        ⏩   hello.innerText = `Hello ${username}`;
+            ➕  백틱기호 문자
+                ➡  ``
+            ➕  백틱기호 문자에서 변수 사용 방법 
+                ➡  ${변수명}
+
+
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
