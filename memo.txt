@@ -293,12 +293,20 @@
                 ➡  현재 시간을 리턴해줌
             ➕  date.getMinutes()
                 ➡  현재 분을 리턴해줌
-            ➕  date.getSecomds()
+            ➕  date.getSeconds()
                 ➡  현재 초를 리턴해줌
 
 🌞           🌈           🌞           🌈           🌞
 
-    
+#5.2
+    1.  app.js 파일 수정
+        ⏩   const hours = String(date.getHours()).padStart(2, "0");
+            ➕  String(otherType) 
+                ➡  otherType을 String으로 변환해줌
+            ➕  String.padStart(10,"0")
+                ➡  String이 10자리가 안된다면 앞에서부터 0을 채워 10자리를 만들어줌
+            ➕  String.padEnd(10,"0")
+                ➡  String이 10자리가 안된다면 뒤에서부터 0을 채워 10자리를 만들어줌
 
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
@@ -359,6 +367,18 @@
     ➕ `backtick ${backtick}` 👉🏻 백틱기호 + 백틱기호 내에서 변수 사용 방법
     ➕ localStorage.getItem(String) 👉🏻 localStorage의 property중에 String과 일치하는 property의 key를 리턴해줌
     ➕ localStorage.setItem(property,key) 👉🏻 localStorage에 property와 key를 등록해줌
+    ➕ setinterval(function,1000) 👉🏻 function을 1000ms당 1번씩 실행한다
+    ➕ setTimeout(function,1000) 👉🏻 function의 실행을 1초 늦춘다
+    ➕ const date = new Date() 👉🏻 Date 인스턴스를 받아온다
+    ➕ date.getHours() 👉🏻 현재 시간을 리턴해줌
+    ➕ date.getMinutes() 👉🏻 현재 분을 리턴해줌
+    ➕ date.getSeconds() 👉🏻 현재 초를 리턴해줌
+    ➕ String(otherType) 👉🏻 otherType을 String으로 변환해줌
+    ➕ String.padStart(10,"0") 👉🏻 String이 10자리가 안된다면 앞에서부터 0을 채워 10자리를 만들어줌
+    ➕ String.padEnd(10,"0") 👉🏻 String이 10자리가 안된다면 뒤에서부터 0을 채워 10자리를 만들어줌
+
+
+            
 
 ➡ 자바스크립트로 HTML에 접근
     ➕  document.getElementById("title") 👉🏻 id가 title인 태그를 가져온다.
