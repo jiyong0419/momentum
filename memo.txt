@@ -199,6 +199,19 @@
             ➕  document.querySelector("input").value 
 
 🌞           🌈           🌞           🌈           🌞
+
+#4.1
+    1.  app.js 파일 수정
+        ⏩   function handleLoginBtnClick(){} 수정
+            ➕  String.length
+                ➡  String이 몇글자인지 Number로 리턴한다.
+    
+    2.  index.html 파일 수정
+        ⏩   <form id="login-form">
+            ➕  <input requried>
+            ➕  <input max-length="15">
+            ➕  <input min-length="15">
+
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
