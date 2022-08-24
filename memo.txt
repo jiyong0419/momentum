@@ -245,10 +245,17 @@
             ➕  백틱기호 문자
                 ➡  ``
             ➕  백틱기호 문자에서 변수 사용 방법 
-                ➡  ${변수명}
-
+                ➡  ${변수명} 
 
 🌞           🌈           🌞           🌈           🌞
+
+#4.5
+    1.  app.js 파일 수정
+        ⏩   localStorage.setItem("username", username);
+            ➕  브라우저에는 localStorage라는 내장 저장소가 있다.
+            ➕  localStorage.setItem(property,key)
+                ➡  localStorage에 property와 key를 등록한다.
+
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
@@ -307,6 +314,9 @@
     ➕ typeof a 👉🏻 a의 데이터 타입을 리턴해줌
     ➕ HTMLTAG.addEventListener("click",function) 👉🏻 HTML 태그에 event를 등록
     ➕ HTMLTAG.style.color = "blue" 👉🏻 HTML 태그의 css를 변경
+    ➕ event.preventDefault 👉🏻 브라우저의 기본 수행동작을 막음
+    ➕ String.length 👉🏻 String의 길이를 Number로 리턴해줌
+    ➕ `backtick ${backtick}` 👉🏻 백틱기호 + 백틱기호 내에서 변수 사용 방법
 
 ➡ 자바스크립트로 HTML에 접근
     ➕  document.getElementById("title") 👉🏻 id가 title인 태그를 가져온다.
