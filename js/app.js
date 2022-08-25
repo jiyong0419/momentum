@@ -1,4 +1,3 @@
-"use strict";
 const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const loginButton = loginForm.querySelector("button");
@@ -13,10 +12,6 @@ function helloUser(username) {
   hello.innerText = `Hello ${username}`;
   hello.classList.remove(HIDDEN_CLASSNAME);
 }
-function getClock() {
-  const date = new Date();
-  clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-}
 
 /**Login 버튼이 눌렸을때 함수 */
 function handleLoginFormSubmit(e) {
@@ -25,12 +20,15 @@ function handleLoginFormSubmit(e) {
   localStorage.setItem(USERNAME_KEY, username);
   loginForm.classList.add(HIDDEN_CLASSNAME);
   helloUser(username);
-  /*
-  if (username === "") {
-    alert("Please write your name");
-  } else if (username.length > 15) {
-    alert("Your name is too long.");
-  } */
+}
+
+/** 현재시간을 출력해주는 함수 */
+function getClock() {
+  const date = new Date();
+  const getHours = String(date.getHours()).padStart(2, "0");
+  const getMinutes = String(date.getMinutes()).padStart(2, "0");
+  const getSeconds = String(date.getSeconds()).padStart(2, "0");
+  clock.innerText = `${getHours}:${getMinutes}:${getSeconds}`;
 }
 const savedUsername = localStorage.getItem("username");
 

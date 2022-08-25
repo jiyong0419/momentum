@@ -275,61 +275,39 @@
 
 #5.0
     1.  Interval 사용 방법
-        ⏩  Interval은 특정 함수를 주기적으로 호출하기위해 사용하는 메서드
-        ⏩  setinterval(function,1000) 
+        ⏩   Interval은 특정 함수를 주기적으로 호출하기위해 사용하는 메서드
+        ⏩   setinterval(function,1000) 
             ➕  function을 1000ms당 1번씩 실행한다
         
+
 🌈           🌞           🌈           🌞           🌈
 
 #5.1
-    setTimeout(function,1000)  function 실행에 딜레이를 건다
-    console.log (new Date())
+    1.  setTimeout 사용 방법
+        ⏩   setTimeout은 특정 함수의 실행을 딜레이 시켜주는 메서드
+        ⏩   setTimeout(function,1000)
+            ➕  function의 실행을 1000ms 늦춤
+    
+    2.  Date object 사용 방법
+        ⏩   Date object는 현재 날짜와 시간에 대한 정보를 담고있다
+        ⏩   const date = new Date()
+            ➕  date.getHours()
+            ➕  date.getMinutes()
+            ➕  date.getSeconds()
+            ➕  date.getDate()
 
 🌞           🌈           🌞           🌈           🌞
+
+#5.2
+    1.  padStart() 와 padEnd() 사용 방법
+        ⏩ String.padStart(10,"0")
+            ➕  String의 자릿수를 10자리로 만들고 앞에서부터 0으로 채워줌
+        ⏩ String.padEnd(10,"0")
+            ➕  String의 자릿수를 10자리로 만들고 뒤에서부터 0으로 채워줌
+
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
-🌈           🌞           🌈           🌞           🌈
-🌞           🌈           🌞           🌈           🌞
+
 
 ➡ 자바스크립트의 여러기능
     ➕ consoloe.log() 👉🏻 () 내부를 콘솔에 출력 (객체를 제외한 모든것)
@@ -345,6 +323,11 @@
     ➕ `backtick ${backtick}` 👉🏻 백틱기호 + 백틱기호 내에서 변수 사용 방법
     ➕ localStorage.getItem(String) 👉🏻 localStorage의 property중에 String과 일치하는 property의 key를 리턴해줌
     ➕ localStorage.setItem(property,key) 👉🏻 localStorage에 property와 key를 등록해줌
+    ➕ setinterval(function,1000) 👉🏻 function을 1000ms당 1번씩 실행한다
+    ➕ setTimeout(function,1000) 👉🏻 function의 실행을 1000ms 늦춤
+    ➕ new Date() 👉🏻 Date object는 현재 날짜와 시간에 대한 정보를 담고있다
+    ➕ String.padStart(10,"0") 👉🏻 String의 자릿수를 10자리로 만들고 앞에서부터 0으로 채워줌
+    ➕ String.padEnd(10,"0") 👉🏻 String의 자릿수를 10자리로 만들고 뒤에서부터 0으로 채워줌
 
 ➡ 자바스크립트로 HTML에 접근
     ➕  document.getElementById("title") 👉🏻 id가 title인 태그를 가져온다.
