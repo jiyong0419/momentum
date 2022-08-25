@@ -1,9 +1,7 @@
-"use strict";
 const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const loginButton = loginForm.querySelector("button");
 const hello = document.querySelector("#hello");
-const clock = document.querySelector("#clock");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -12,10 +10,6 @@ const USERNAME_KEY = "username";
 function helloUser(username) {
   hello.innerText = `Hello ${username}`;
   hello.classList.remove(HIDDEN_CLASSNAME);
-}
-function getClock() {
-  const date = new Date();
-  clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
 
 /**Login 버튼이 눌렸을때 함수 */
@@ -40,6 +34,3 @@ if (savedUsername === null) {
 } else {
   helloUser(savedUsername);
 }
-
-getClock();
-setInterval(getClock, 1000);

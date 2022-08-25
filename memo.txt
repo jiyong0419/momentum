@@ -280,11 +280,6 @@
             ➕  function을 1000ms당 1번씩 실행한다
         
 🌈           🌞           🌈           🌞           🌈
-
-#5.1
-    setTimeout(function,1000)  function 실행에 딜레이를 건다
-    console.log (new Date())
-
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
