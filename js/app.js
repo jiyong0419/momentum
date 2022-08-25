@@ -1,3 +1,4 @@
+"use strict";
 const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const loginButton = loginForm.querySelector("button");
@@ -30,6 +31,7 @@ function getClock() {
   const getSeconds = String(date.getSeconds()).padStart(2, "0");
   clock.innerText = `${getHours}:${getMinutes}:${getSeconds}`;
 }
+
 const savedUsername = localStorage.getItem("username");
 
 if (savedUsername === null) {
