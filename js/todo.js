@@ -4,7 +4,7 @@ const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 
 const TODOS_KEY = "todos";
-const toDos = [];
+let toDos = [];
 
 /**입력받은 Todo를 localStorage에 저장 */
 function saveToDos() {
@@ -45,7 +45,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos) {
   const parsedToDos = JSON.parse(savedToDos);
-  parsedToDos.forEach((item) => {
-    paintTodo(item);
-  });
+  toDos = parsedToDos;
+  parsedToDos.forEach(paintTodo);
 }
