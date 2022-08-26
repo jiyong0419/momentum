@@ -364,6 +364,20 @@
 
 🌞           🌈           🌞           🌈           🌞
 
+#7.3    
+    1.  todo.js 파일 수정
+        ⏩   function saveToDos() {}
+            ➕  localStorage.setItem("todos", JSON.stringify(toDos));
+                ➡  JSON.stringify()는 ()안의 내용을 그대로 String으로 변환해줌
+
+🌈           🌞           🌈           🌞           🌈
+
+🌞           🌈           🌞           🌈           🌞
+🌈           🌞           🌈           🌞           🌈
+🌞           🌈           🌞           🌈           🌞
+🌈           🌞           🌈           🌞           🌈
+🌞           🌈           🌞           🌈           🌞
+
 
 ➡ 자바스크립트의 여러기능
     ➕ consoloe.log() 👉🏻 () 내부를 콘솔에 출력 (객체를 제외한 모든것)
@@ -391,6 +405,7 @@
     ➕ Math.round() 👉🏻 소수점 1의자리에서 반올림해줌
     ➕ e.target 👉🏻 event가 일어난 지점의 element를 리턴해줌
     ➕ e.target.parentElement 👉🏻 event가 일어난 element의 부모 element를 리턴해줌
+    ➕ JSON.stringify()
 
 
 
