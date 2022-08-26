@@ -4,6 +4,7 @@ const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 
 const TODOS_KEY = "todos";
+
 let toDos = [];
 
 /**입력받은 Todo를 localStorage에 저장 */
@@ -14,7 +15,8 @@ function saveToDos() {
 function deleteTodo(e) {
   const li = e.target.parentElement;
   li.remove();
-  //   toDoList.removeChild(e.target.parentElement);
+  toDos = toDos.filter((item) => item.id !== parseInt(li.id));
+  saveToDos();
 }
 
 /**Todo가 submit되었을때 Todo리스트에 li추가 */
@@ -22,10 +24,10 @@ function paintTodo(newToDoObj) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   span.innerText = newToDoObj.text;
-  span.setAttribute("id", newToDoObj.id);
   const btn = document.createElement("button");
   btn.innerText = "❌";
   btn.addEventListener("click", deleteTodo);
+  li.setAttribute("id", newToDoObj.id);
   li.appendChild(span);
   li.appendChild(btn);
   toDoList.appendChild(li);
