@@ -385,7 +385,15 @@
 #7.5
     1.  todo.js 파일 수정
         ⏩   let toDos = [];
+
 🌈           🌞           🌈           🌞           🌈
+
+#7.6
+    1.  todo.js 파일 수정
+        ⏩   function paintTodo(newToDoObj) {}
+        ⏩   const newToDoObj = {}
+            ➕  id: Date.now()
+                ➡  Date.now()는 1970년 1월 1일 0시 0분 0초부터 현재까지 경과된 밀리 초를 반환해줌
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
@@ -410,6 +418,7 @@
     ➕ setinterval(function,1000) 👉🏻 function을 1000ms당 1번씩 실행한다
     ➕ setTimeout(function,1000) 👉🏻 function의 실행을 1000ms 늦춤
     ➕ new Date() 👉🏻 Date object는 현재 날짜와 시간에 대한 정보를 담고있다
+    ➕ Date.now() 👉🏻 1970년 1월 1일 0시 0분 0초부터 현재까지 경과된 밀리 초를 반환해줌
     ➕ String.padStart(10,"0") 👉🏻 String의 자릿수를 10자리로 만들고 앞에서부터 0으로 채워줌
     ➕ String.padEnd(10,"0") 👉🏻 String의 자릿수를 10자리로 만들고 뒤에서부터 0으로 채워줌
     ➕ Math.random() 👉🏻 0 이상 1 미만의 무작위 숫자를 리턴해줌
@@ -471,3 +480,4 @@
 ➡  영상속 꿀 Tip 🎈
     ➕  CSS의 모든변화에는 transtion을 이용하려 해보자!
     ➕  영상엔 나오지 않지만 js파일에는 첫줄에 'use strict'를 하자!
+    ➕  랜덤한 id를 부여하고 싶을땐 혹은 랜덤한 숫자를 부여하고 싶을땐 Date.now() 함수를 이용하자!

@@ -18,10 +18,11 @@ function deleteTodo(e) {
 }
 
 /**Todo가 submit되었을때 Todo리스트에 li추가 */
-function paintTodo(newTodo) {
+function paintTodo(newToDoObj) {
   const li = document.createElement("li");
   const span = document.createElement("span");
-  span.innerText = newTodo;
+  span.innerText = newToDoObj.text;
+  span.setAttribute("id", newToDoObj.id);
   const btn = document.createElement("button");
   btn.innerText = "❌";
   btn.addEventListener("click", deleteTodo);
@@ -34,8 +35,12 @@ function handleToDoSubmit(e) {
   e.preventDefault();
   const value = toDoInput.value;
   toDoInput.value = "";
-  toDos.push(value);
-  paintTodo(value);
+  const newToDoObj = {
+    text: value,
+    id: Date.now(),
+  };
+  toDos.push(newToDoObj);
+  paintTodo(newToDoObj);
   saveToDos();
 }
 
