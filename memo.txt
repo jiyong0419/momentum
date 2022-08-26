@@ -352,6 +352,16 @@
     1.  todo.js 파일 수정
         ⏩   function paintTodo(newTodo) {}
 🌈           🌞           🌈           🌞           🌈
+
+#7.2
+    1.  todo.js 파일 수정
+        ⏩   +function deleteTodo(e) {}
+            ➕  const li = e.target.parentElement;
+                ➡  e.target은 이벤트가 일어난 지점의 Element를 알려줌
+                ➡  e.target.parentElement는 이벤트가 일어난 Element의 부모 Element를 알려줌
+            ➕  li.remove();
+                ➡  해당 Element를 삭제함
+
 🌞           🌈           🌞           🌈           🌞
 
 
@@ -379,6 +389,8 @@
     ➕ Math.floor() 👉🏻 소수점 1의자리에서 내림해줌
     ➕ Math.ceil() 👉🏻 소수점 1의자리에서 올림해줌
     ➕ Math.round() 👉🏻 소수점 1의자리에서 반올림해줌
+    ➕ e.target 👉🏻 event가 일어난 지점의 element를 리턴해줌
+    ➕ e.target.parentElement 👉🏻 event가 일어난 element의 부모 element를 리턴해줌
 
 
 
@@ -398,6 +410,7 @@
     ➕  HTMLTAG.value 👉🏻 HTML tag의 value를 가져온다. (주로 input태그에 쓰임)
     ➕  HTMLTAG.setAttribute("attribute","value") 👉🏻 HTML tag에 attribute를 부여한다
     ➕  HTMLTAG.appendChild(tagName) 👉🏻 HTML tag의 자식요소로 tagName을 추가한다
+    ➕  HTMLTAG.remove(); 👉🏻 HTML tag를 제거함
 
 ➡ 여러가지 Evenet들
     ➕  click
