@@ -345,8 +345,12 @@
         ⏩   <script src="js/todo.js" defer>
 
     2.  todo.js 파일 생성
-
+        ⏩   function handleToDoSubmit(e) {}
 🌞           🌈           🌞           🌈           🌞
+
+#7.1    
+    1.  todo.js 파일 수정
+        ⏩   function paintTodo(newTodo) {}
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
 
