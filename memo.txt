@@ -326,7 +326,8 @@
 
 #6.1
     1.  index.html 파일 수정
-        ⏩   <src="js/background.js" defer>
+        ⏩   <script src="js/background.js" defer>
+    
     2.  background.js 파일 생성
         ⏩   document.createElement("img")
             ➕  JS에서 HTML 태그를 생성해줌
@@ -336,6 +337,15 @@
             ➕  JS에서 HTML 태그의 제일 마지막 자식으로 새로운 태그를 부여해줌
 
 🌈           🌞           🌈           🌞           🌈
+
+#7.0
+    1.  index.html 파일 수정
+        ⏩   <form action="" id="todo-form">
+        ⏩   <ul id="todo-list">
+        ⏩   <script src="js/todo.js" defer>
+
+    2.  todo.js 파일 생성
+
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
