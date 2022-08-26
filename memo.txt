@@ -405,6 +405,21 @@
                 ➡  function은 true/false를 리턴해야하고, true면 새로운배열에 포함, false면 새로운배열에 미포함한다.
 
 🌈           🌞           🌈           🌞           🌈
+
+#8.0
+    1.  weather.js 파일 생성
+        ⏩   function onGeoOk(position) {}
+            ➕  const lat = position.coords.latitude;
+                ➡  나의 위치의 경도 값을 리턴해줌
+            ➕  const lng= position.coords.longitude;
+                ➡  나의 위치의 위도 값을 리턴해줌
+        ⏩   function onGeoError() {}
+        ⏩   navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+            ➕  navigator.geolocation.getCurrentPosition()은 나의 위치에 대한 정보를 제공한다.
+            ➕  getCurruentPosition()은 2개의 콜백함수가 필요하다 (위치를 성공적으로 불러왔을때, 위치를 불러오는데 실패했을때)
+                ➡ 위치를 성공적으로 불러왔을때 함수는 positon을 제공한다.
+
+
 🌞           🌈           🌞           🌈           🌞
 
 
@@ -438,6 +453,9 @@
     ➕ e.target.parentElement 👉🏻 event가 일어난 element의 부모 element를 리턴해줌
     ➕ JSON.stringify() 👉🏻 ()안의 자바스크립트 데이터를 String으로 변환하여 리턴해줌
     ➕ JSON.parse() 👉🏻 ()안의 자바스크립트 데이터를 Array로 변환하여 리턴해줌
+    ➕ navigator.geolocation.getCurrentPosition(성공함수,실패함수) 👉🏻 나의 위치에 대한 정보를 제공해줌 (성공함수는 position을 제공해줌)
+    ➕ position.coords.latitude 👉🏻 나의 위치의 경도 값을 리턴해줌
+    ➕ position.coords.longitude 👉🏻 나의 위치의 위도 값을 리턴해줌
 
 
 
