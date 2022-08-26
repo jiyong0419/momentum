@@ -323,6 +323,18 @@
                 ➡  배열의 길이를 리턴해줌
 
 🌞           🌈           🌞           🌈           🌞
+
+#6.1
+    1.  index.html 파일 수정
+        ⏩   <src="js/background.js" defer>
+    2.  background.js 파일 생성
+        ⏩   document.createElement("img")
+            ➕  JS에서 HTML 태그를 생성해줌
+        ⏩   imageTag.setAttribute("src", `img/${randomImages}`)
+            ➕  JS에서 HTML 태그의 속성을 부여해줌
+        ⏩   document.body.appendChild(imageTag);
+            ➕  JS에서 HTML 태그의 제일 마지막 자식으로 새로운 태그를 부여해줌
+
 🌈           🌞           🌈           🌞           🌈
 🌞           🌈           🌞           🌈           🌞
 🌈           🌞           🌈           🌞           🌈
@@ -355,12 +367,14 @@
     ➕ Math.round() 👉🏻 소수점 1의자리에서 반올림해줌
 
 
+
 ➡ 자바스크립트로 HTML에 접근
     ➕  document.getElementById("title") 👉🏻 id가 title인 태그를 가져온다.
     ➕  document.getElementByClassName("title") 👉🏻 class가 body인 태그를 가져온다.
     ➕  document.getElementsByTagName("title") 👉🏻 title 태그를 배열 형태로 불러온다.
     ➕  document.querySelector(".title") 👉🏻 class가 title인 여러 태그들 중 첫번째를 불러온다.
     ➕  document.querySelectorAll(".title") 👉🏻 class가 title인 여러 태그들을 배열 형태로 불러온다.
+    ➕  document.createElement("div") 👉🏻 div 태그를 만든다
     ➕  HTMLTAG.className 👉🏻 HTML tag의 className을 가져온다.
     ➕  HTMLTAG.innerText = "" 👉🏻 HTML tag의 내부 text를 변경한다.
     ➕  HTMLTAG.classList.contains(className) 👉🏻 HTML tag의 class에 className이 있는지 확인한다. (Boolean 반환)
@@ -368,6 +382,8 @@
     ➕  HTMLTAG.classList.remove(className) 👉🏻 HTML tag의 class에 className을 제거한다
     ➕  HTMLTAG.classList.toggle(className) 👉🏻 HTML tag의 class에 className이 없다면 추가 / 있다면 제거 한다
     ➕  HTMLTAG.value 👉🏻 HTML tag의 value를 가져온다. (주로 input태그에 쓰임)
+    ➕  HTMLTAG.setAttribute("attribute","value") 👉🏻 HTML tag에 attribute를 부여한다
+    ➕  HTMLTAG.appendChild(tagName) 👉🏻 HTML tag의 자식요소로 tagName을 추가한다
 
 ➡ 여러가지 Evenet들
     ➕  click
