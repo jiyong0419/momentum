@@ -1,5 +1,5 @@
 "use strict";
-const images = ["bg_image_1.jpg", "bg_image_2.avif", "bg_image_3.jpg", "bg_image_4.webp", "bg_image_5.png"];
+const images = ["bg1.jpg", "bg2.avif", "bg3.png", "bg4.webp", "bg5.jpg"];
 const randomImages = images[Math.floor(Math.random() * images.length)];
 const imageTag = document.createElement("img");
 imageTag.setAttribute("src", `img/${randomImages}`);
