@@ -11,9 +11,22 @@ function onGeoOk(position) {
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
       city.innerText = responseJson.name;
-      weather.innerText = responseJson.weather[0].main;
+      if (responseJson.weather[0].main === "Clear") {
+        weather.innerText = "🌞";
+        city.style.color = "#F6E960";
+      } else if (responseJson.weather[0].main === "Clouds") {
+        weather.innerText = "☁";
+        city.style.color = "#89A2AB";
+      } else if (responseJson.weather[0].main === "Rain") {
+        weather.innerText = "☔";
+        city.style.color = "#06B1E0";
+      } else if (responseJson.weather[0].main === "Snow") {
+        weather.innerText = "☃";
+        city.style.color = "#E3FFFF";
+      }
     });
 }
+
 function onGeoError() {
   alert("Can't find you");
 }
